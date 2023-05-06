@@ -7,7 +7,7 @@ import requests
 import json
 
 # Telegram bot token
-API_TOKEN = "___TELEGRAM_API_TOKEN___"
+API_TOKEN = "6186448881:AAEKE1MvfeixNBV4grVTvdmipg4cBmXD7Y0"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -56,15 +56,12 @@ async def text(message: types.Message):
     # Send the formatted data to the user on Telegram
     await bot.send_message(message.chat.id,f"""
                            
-                           👨 ФИО: {data['name']}
-                           🏳️ Страна: {data['country']}
-                           📱 Оператор: {data['operator']}
-                           📓 Объявления: {data['obyavleniya']}
+                           👨 КОГО ИЩЕШЬ СУКА: {data['name']}
+                           🏳️ СТРАНА НАЗУЙ: {data['country']}
+                           📱 ОПЕРАТОР ЕГО ЕБАНА В РОТ: {data['operator']}
+                           📓 АВИТО ЕБУЧИЙ: {data['obyavleniya']}
 
-                           @dimondevchat
-                           
-                           Код бота: https://github.com/SegYT/glazboga/
-                           """)
+
 
 
 # Main loop
